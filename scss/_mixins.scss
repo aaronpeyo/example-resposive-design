@@ -1,0 +1,35 @@
+@mixin box-sizing($box-model) {
+    box-sizing: $box-model;
+}
+
+@mixin btn {
+    background-color: $primary;
+    color: $blanco;
+    border-radius: .5rem;
+    padding: 1rem 2rem;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+@mixin left($circulo, $position) {
+    background-image: url($circulo);
+    background-repeat: no-repeat;
+    background-position: top $position;
+}
+
+
+@mixin telefono {
+    @media (min-width: $telefono) {
+        @content;  
+    }
+}
+@mixin tablet {
+    @media (min-width: $tablet) {
+        @content;  
+    }
+}
+@mixin desktop {
+    @media (min-width: $desktop) {
+        @content;  
+    }
+}

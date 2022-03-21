@@ -1,2 +1,5 @@
-# example-resposive-design
-Example of responsive page, blog, image scroll effect
+## Instalar estas dependencias
+- gulp
+- gulp-autoprefixer
+- gulp-sass
+- sass
